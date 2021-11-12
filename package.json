@@ -1,5 +1,5 @@
 {
-  "name": "mfij",
+  "name": "magic-juice",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,7 +27,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
