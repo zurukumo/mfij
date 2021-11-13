@@ -9,7 +9,7 @@ const Template = (props: { title: string; children: ReactNode }) => (
       <title>{props.title} - Magic Juice</title>
     </Helmet>
     <Navbar />
-    <div className="flex flex-col items-center w-full py-5">
+    <div className="flex flex-col items-center w-full py-10">
       {props.children}
     </div>
   </div>
