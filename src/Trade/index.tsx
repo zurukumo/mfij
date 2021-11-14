@@ -4,7 +4,7 @@ import { DATAS } from './datas'
 import Detail from './Detail'
 
 const Trade = () => (
-  <Template title="トレード歴史">
+  <Template title="トレードの歴史">
     <div className="flex flex-col items-center w-4/5 font-bold">
       <div className="flex w-full justify-center">
         <div className="hidden md:flex flex-col justify-around text-center py-3 border-2 border-solid divide-gray-100 w-1/6">
