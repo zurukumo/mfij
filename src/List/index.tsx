@@ -27,6 +27,7 @@ const List = () => {
             onClick={() => {
               setTeam(team);
             }}
+            key={team}
           >
             {team}
           </div>
