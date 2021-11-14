@@ -1,0 +1,66 @@
+@import "/src/utils/breakpoint";
+@import "/src/utils/mixin";
+
+.players {
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 1rem;
+  width: 75%;
+
+  @include mq(md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @include mq(xl) {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player_description {
+  width: 80%;
+  padding: 0.5rem;
+  margin-top: -1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 2px solid #aaa;
+  border-radius: 0.5rem;
+}
+
+.teams {
+  display: grid;
+  gap: 1rem;
+  width: 66.6667%;
+  margin-top: 4rem;
+
+  @include mq(md) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  @include mq(xl) {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+}
+
+.team {
+  padding: 1.25rem;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #aaa;
+  border-radius: 0.5rem;
+
+  &:hover {
+    opacity: 75%;
+  }
+}
