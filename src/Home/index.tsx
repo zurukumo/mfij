@@ -13,7 +13,7 @@ const Home = () => (
         </Card>
       </Link>
       <Link to="./list" className="hover:opacity-75">
-        <Card title="顔写真付きリスト表示">
+        <Card title="選手名鑑">
           顔写真付きで選手のリストを表示できます。
           まだ開発中なのでこれからどんどん機能を追加していこうと思います。
           自分の好きなチームを紹介するスクショ用途などで是非ご利用ください。
