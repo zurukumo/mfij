@@ -16,7 +16,7 @@ const Trade = () => (
 
       {DATAS.map((data, key) => (
         <div className="tr" key={key}>
-          <div className={`date-td ${data.type}`}>{data.date}</div>
+          <div className="date-td">{data.date}</div>
           <div className={`detail-td ${data.type}`}>
             <Detail datas={data.acquires} />
           </div>
