@@ -20,13 +20,25 @@ const Trade = () => (
 
       {DATAS.map((data, key) => (
         <div className="flex w-full justify-center" key={key}>
-          <div className="hidden md:flex flex-col justify-around text-center py-3 border-2 border-solid divide-gray-100 w-1/6">
+          <div
+            className={`hidden md:flex flex-col justify-around text-center py-3 border-2 border-solid divide-gray-100 w-1/6 ${
+              data.type === "personal" && "bg-black text-white"
+            }`}
+          >
             {data.date}
           </div>
-          <div className="flex flex-col justify-around text-center py-3 border-2 border-solid divide-gray-100 w-1/2 md:w-2/5">
+          <div
+            className={`flex flex-col justify-around text-center py-3 border-2 border-solid divide-gray-100 w-1/2 md:w-2/5 ${
+              data.type === "personal" && "bg-black text-white"
+            }`}
+          >
             <Detail datas={data.acquires} />
           </div>
-          <div className="flex flex-col justify-around text-center py-3 border-2 border-solid divide-gray-100 w-1/2 md:w-2/5">
+          <div
+            className={`flex flex-col justify-around text-center py-3 border-2 border-solid divide-gray-100 w-1/2 md:w-2/5 ${
+              data.type === "personal" && "bg-black text-white"
+            }`}
+          >
             <Detail datas={data.releases} />
           </div>
         </div>

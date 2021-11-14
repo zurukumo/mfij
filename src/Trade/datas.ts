@@ -1,21 +1,25 @@
 export const DATAS = [
   {
     date: "2021/07/29",
+    type: "trade",
     acquires: ["pick:2026-2", "cash:"],
     releases: ["player:prestja01"],
   },
   {
     date: "2021/03/25",
+    type: "trade",
     acquires: ["player:harriga01", "player:hamptrj01", "pick:2025-1"],
     releases: ["player:gordoaa01", "player:clarkga01"],
   },
   {
     date: "2021/03/25",
+    type: "trade",
     acquires: ["player:teaguje01", "pick:2025-2", "pick:2027-2"],
     releases: ["player:fournev01"],
   },
   {
     date: "2021/03/25",
+    type: "trade",
     acquires: [
       "player:cartewe01",
       "player:porteot01",
@@ -26,21 +30,25 @@ export const DATAS = [
   },
   {
     date: "2020/11/18",
+    type: "trade",
     acquires: ["pick:2022-2", "pick:2026-2"],
     releases: ["pick:2020-2,player:nworajo01"],
   },
   {
     date: "2020/02/06",
+    type: "trade",
     acquires: ["player:ennisja01"],
     releases: ["pick:2020-2,player:reedpa01"],
   },
   {
     date: "2019/06/20",
+    type: "trade",
     acquires: ["pick:2020-2,player:reedpa01", "cash:"],
     releases: ["pick:2019-2,player:hortota01"],
   },
   {
     date: "2019/02/07",
+    type: "trade",
     acquires: ["player:fultzma01"],
     releases: [
       "player:simmojo02",
@@ -50,16 +58,19 @@ export const DATAS = [
   },
   {
     date: "2018/07/23",
+    type: "trade",
     acquires: ["player:martija01", "cash:"],
     releases: ["player:johnsda04", "player:harvety01"],
   },
   {
     date: "2018/07/20",
+    type: "trade",
     acquires: ["player:johnsda04", "cash:"],
     releases: ["player:purviro01"],
   },
   {
     date: "2018/07/07",
+    type: "trade",
     acquires: ["player:mozgoti01", "player:grantje02"],
     releases: [
       "player:biyombi01",
@@ -69,91 +80,115 @@ export const DATAS = [
   },
   {
     date: "2018/06/21",
+    type: "trade",
     acquires: ["player:jacksju02", "pick:2019-2,player:martico01"],
     releases: ["player:vandeja01"],
   },
   {
     date: "2018/02/08",
+    type: "trade",
     acquires: ["pick:2018-2,player:vandeja01"],
     releases: ["player:paytoel01"],
   },
   {
     date: "2017/06/22",
+    type: "trade",
     acquires: ["pick:2020-1,player:maxeyty01", "pick:2020-2,player:madarya01"],
     releases: ["player:pasecan01"],
   },
   {
     date: "2017/06/22",
+    type: "trade",
     acquires: ["pick:2019-2,player:hortota01"],
     releases: ["player:rabbiv01"],
   },
   {
+    date: "2017/05/23",
+    type: "personal",
+    acquires: ["manager:Jeff Weltman & John Hammond"],
+    releases: ["manager:Rob Hennigan"],
+  },
+  {
     date: "2017/02/14",
+    type: "trade",
     acquires: ["player:rosste01", "pick:2017-1,player:pasecan01"],
     releases: ["player:ibakase01"],
   },
   {
     date: "2016/07/15",
+    type: "trade",
     acquires: ["player:wilcocj01", "cash:"],
     releases: ["player:marblde01", "pick:2020-2,player:careyve01"],
   },
   {
     date: "2016/07/07",
+    type: "trade",
     acquires: ["cash:"],
     releases: ["player:napiesh01"],
   },
   {
     date: "2016/06/29",
+    type: "trade",
     acquires: ["player:meeksjo01"],
     releases: ["pick:2019-2,player:handsja01"],
   },
   {
     date: "2016/06/23",
+    type: "trade",
     acquires: ["player:ibakase01"],
     releases: ["player:oladivi01", "player:ilyaser01", "player:sabondo01"],
   },
   {
     date: "2016/06/23",
+    type: "trade",
     acquires: ["pick:2019-2,player:handsja01", "cash:"],
     releases: ["player:laymaja01"],
   },
   {
     date: "2016/02/18",
+    type: "trade",
     acquires: ["player:cunnija01", "pick:2020-2,player:careyve01"],
     releases: ["player:fryech01"],
   },
   {
     date: "2016/02/16",
+    type: "trade",
     acquires: ["player:ilyaser01", "player:jennibr01"],
     releases: ["player:harrito02"],
   },
   {
     date: "2016/01/12",
+    type: "trade",
     acquires: ["player:harrijo01", "pick:2017-2,protected:"],
     releases: ["pick:2020-2,protected:"],
   },
   {
     date: "2015/07/27",
+    type: "trade",
     acquires: ["player:napiesh01", "cash:"],
     releases: ["pick:2016-2,protected:"],
   },
   {
     date: "2015/07/12",
+    type: "trade",
     acquires: ["pick:2020-2,protected:"],
     releases: ["player:harklma01"],
   },
   {
     date: "2015/07/09",
+    type: "trade",
     acquires: ["pick:2019-2,player:edwarca01", "cash:"],
     releases: ["player:oquinky01", "pick:2019-2,player:brazdig01"],
   },
   {
     date: "2015/06/24",
+    type: "trade",
     acquires: ["player:timmaja01"],
     releases: ["player:ridnolu01"],
   },
   {
     date: "2014/07/14",
+    type: "trade",
     acquires: [
       "player:randoan01",
       "pick:2015-2,player:harvety01",
@@ -164,6 +199,7 @@ export const DATAS = [
   },
   {
     date: "2014/06/26",
+    type: "trade",
     acquires: ["player:paytoel01"],
     releases: [
       "player:saricda01",
@@ -174,10 +210,12 @@ export const DATAS = [
   {
     date: "2014/06/26",
     releases: ["player:fournev01", "player:marblde01"],
+    type: "trade",
     acquires: ["player:afflaar01"],
   },
   {
     date: "2013/02/21",
+    type: "trade",
     acquires: [
       "player:lambdo01",
       "player:harrito02",
@@ -188,11 +226,13 @@ export const DATAS = [
   },
   {
     date: "2013/02/21",
+    type: "trade",
     acquires: ["player:warriha01"],
     releases: ["player:mcrobjo01"],
   },
   {
     date: "2012/08/10",
+    type: "trade",
     acquires: [
       "player:mcrobjo01",
       "player:eyengch01",
@@ -216,21 +256,31 @@ export const DATAS = [
   },
   {
     date: "2012/07/11",
+    type: "trade",
     acquires: ["player:ayongu01"],
     releases: ["player:anderry01"],
   },
   {
+    date: "2012/06/20",
+    type: "personal",
+    acquires: ["manager:Rob Hennigan"],
+    releases: ["manager:Otis Smith"],
+  },
+  {
     date: "2011/12/12",
+    type: "trade",
     acquires: ["player:davisgl01", "player:wafervo01"],
     releases: ["player:bassbr01"],
   },
   {
     date: "2011/06/23",
+    type: "trade",
     acquires: ["player:harpeju01"],
     releases: ["pick:2013-2,player:crabbal01", "pick:2014-2,player:harrijo01"],
   },
   {
     date: "2010/12/18",
+    type: "trade",
     acquires: [
       "player:arenagi01",
       "player:richaja01",
