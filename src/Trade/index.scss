@@ -1,0 +1,50 @@
+@import "/src/utils/breakpoint";
+@import "/src/utils/mixin";
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  font-weight: 700;
+}
+
+.tr {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.base-td {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.75rem 0;
+  text-align: center;
+  border: 2px solid #ccc;
+}
+
+.date-td {
+  @extend .base-td;
+
+  display: none;
+  width: 16.6667%;
+
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.detail-td {
+  @extend .base-td;
+
+  width: 50%;
+
+  @include mq(md) {
+    width: 50%;
+  }
+}
+
+.personal {
+  background-color: #000;
+}
