@@ -14,7 +14,7 @@
   width: 100%;
 }
 
-.base-td {
+.base_td {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -23,8 +23,8 @@
   border: 2px solid #ccc;
 }
 
-.date-td {
-  @extend .base-td;
+.date_td {
+  @extend .base_td;
 
   display: none;
   width: 16.6667%;
@@ -34,8 +34,8 @@
   }
 }
 
-.detail-td {
-  @extend .base-td;
+.detail_td {
+  @extend .base_td;
 
   width: 50%;
 
