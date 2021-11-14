@@ -98,7 +98,7 @@ const Player = (props: { id: string; idx: number }) => (
     <a
       href={`${BBR_URL}/players/${props.id.slice(0, 1)}/${props.id}.html`}
       target="blank"
-      className="hover:opacity-75"
+      className="underline hover:opacity-75"
     >
       {props.idx >= 1 && "=>  "}
       {PLAYERS[props.id]}
