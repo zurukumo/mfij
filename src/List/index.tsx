@@ -9,7 +9,7 @@ const List = () => {
   players.sort((a, b) => (a.name > b.name ? 1 : -1));
 
   return (
-    <Template title="表示機能">
+    <Template title="選手名鑑">
       <div className="grid 2xl:grid-cols-6 xl:grid-cols-5 md:grid-cols-3 gap-x-4 gap-y-8 w-3/4">
         {players.map((data) => (
           <div className="flex flex-col items-center" key={data.name}>
