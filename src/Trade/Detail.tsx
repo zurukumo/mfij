@@ -16,6 +16,12 @@ const Detail = (props: { datas: string[] }) => (
                 {round === "1" ? "st" : "nd"} round pick
               </div>
             );
+          } else if (type === "manager") {
+            return (
+              <div className="font-bold" key={idx}>
+                {content}
+              </div>
+            );
           } else if (type === "cash") {
             return (
               <div className="text-blue-500 font-bold" key={idx}>
