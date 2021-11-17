@@ -1,0 +1,27 @@
+.row {
+  margin: 1rem 0;
+}
+
+.player {
+  text-decoration: underline;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.pick {
+  color: #2e8b57;
+}
+
+.cash {
+  color: #4682b4;
+}
+
+.protected {
+  color: #dc143c;
+}
+
+.manager {
+  color: #fff;
+}

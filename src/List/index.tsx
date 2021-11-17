@@ -2,6 +2,7 @@ import Template from 'components/Template'
 import { useState } from 'react'
 
 import { DATAS, TEAMS } from './datas'
+import styles from './index.module.scss'
 
 const List = () => {
   const [team, setTeam] = useState("ORL");
@@ -10,20 +11,18 @@ const List = () => {
 
   return (
     <Template title="選手名鑑">
-      <div className="grid 2xl:grid-cols-6 xl:grid-cols-5 md:grid-cols-3 gap-x-4 gap-y-8 w-3/4">
+      <div className={styles.players}>
         {players.map((data) => (
-          <div className="flex flex-col items-center" key={data.name}>
+          <div className={styles.player} key={data.name}>
             <img src={data.url} alt={data.name} />
-            <div className="w-4/5 -mt-4 p-2 bg-white shadow-lg rounded-lg text-center align-middle text-sm font-bold">
-              {data.name}
-            </div>
+            <div className={styles.player_description}>{data.name}</div>
           </div>
         ))}
       </div>
-      <div className="grid xl:grid-cols-10 md:grid-cols-5 gap-4 w-2/3 mt-16">
+      <div className={styles.teams}>
         {TEAMS.map((team) => (
           <div
-            className="p-5 bg-white shadow-lg rounded-lg text-center align-middle cursor-pointer hover:opacity-75"
+            className={styles.team}
             onClick={() => {
               setTeam(team);
             }}

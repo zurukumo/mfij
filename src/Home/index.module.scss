@@ -1,0 +1,15 @@
+@import "/src/utils/mixin";
+
+.wrapper {
+  display: grid;
+  gap: 1rem;
+  width: 66.6667%;
+
+  @include mq(sm) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  @include mq(md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
