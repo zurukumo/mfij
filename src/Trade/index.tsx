@@ -16,10 +16,10 @@ const Trade = () => (
       {DATAS.map((data, key) => (
         <div className={styles.tr} key={key}>
           <div className={styles.date_td}>{data.date}</div>
-          <div className={`${styles.detail_td} ${data.type}`}>
+          <div className={`${styles.detail_td} ${styles[data.type]}`}>
             <Detail datas={data.acquires} />
           </div>
-          <div className={`${styles.detail_td} ${data.type}`}>
+          <div className={`${styles.detail_td} ${styles[data.type]}`}>
             <Detail datas={data.releases} />
           </div>
         </div>
