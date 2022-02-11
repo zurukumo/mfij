@@ -1,7 +1,7 @@
-import logo from 'logo.png'
-import { Link } from 'react-router-dom'
+import logo from "logo.png";
+import { Link } from "react-router-dom";
 
-import styles from './Navbar.module.scss'
+import styles from "./Navbar.module.scss";
 
 const Navbar = () => (
   <nav className={styles.wrapper}>
