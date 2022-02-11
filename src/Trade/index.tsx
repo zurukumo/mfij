@@ -65,7 +65,7 @@ const Trade = () => (
         <DateTd>2022/02/10</DateTd>
         <DetailTd>
           <Row>
-            <Player player_id="doziepj01">PJ Dozier</Player>
+            <Player player_id="doziepj01">P.J. Dozier</Player>
           </Row>
           <Row>
             <Player player_id="bolbo01">Bol Bol</Player>
