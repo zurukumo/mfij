@@ -209,10 +209,7 @@ const Trade = () => (
           </Row>
         </DetailTd>
         <DetailTd>
-          <Row>
-            <Pick>2019 2nd round pick</Pick>
-            <Player player_id="hortota01">=&gt; Talen Horton-Tucker</Player>
-          </Row>
+          <Player player_id="hortota01">=&gt; Talen Horton-Tucker</Player>
         </DetailTd>
       </Tr>
       <Tr>
