@@ -640,15 +640,15 @@ const Trade = () => (
         <DateTd>2014/06/26</DateTd>
         <DetailTd>
           <Row>
-            <Player player_id="afflaar01">Arron Afflalo</Player>
-          </Row>
-        </DetailTd>
-        <DetailTd>
-          <Row>
             <Player player_id="fournev01">Evan Fournier</Player>
           </Row>
           <Row>
             <Player player_id="marblde01">Devyn Marble</Player>
+          </Row>
+        </DetailTd>
+        <DetailTd>
+          <Row>
+            <Player player_id="afflaar01">Arron Afflalo</Player>
           </Row>
         </DetailTd>
       </Tr>
