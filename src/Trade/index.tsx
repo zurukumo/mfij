@@ -62,6 +62,25 @@ const Trade = () => (
         <DetailTd>放出</DetailTd>
       </Tr>
       <Tr>
+        <DateTd>2023/02/09</DateTd>
+        <DetailTd>
+          <Row>
+            <Player player_id="beverpa01">Patrick Beverley</Player>
+          </Row>
+          <Row>
+            <Pick>2024 second round pick</Pick>
+          </Row>
+          <Row>
+            <Cash>cash</Cash>
+          </Row>
+        </DetailTd>
+        <DetailTd>
+          <Row>
+            <Player player_id="bambamo01">Mo Bamba</Player>
+          </Row>
+        </DetailTd>
+      </Tr>
+      <Tr>
         <DateTd>2022/06/23</DateTd>
         <DetailTd>
           <Row>
