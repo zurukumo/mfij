@@ -68,7 +68,7 @@ const Trade = () => (
             <Player player_id="beverpa01">Patrick Beverley</Player>
           </Row>
           <Row>
-            <Pick>2024 second round pick</Pick>
+            <Pick>2024 2nd round pick</Pick>
           </Row>
           <Row>
             <Cash>cash</Cash>
@@ -207,6 +207,7 @@ const Trade = () => (
         <DetailTd>
           <Row>
             <Pick>2022 2nd round pick</Pick>
+            <Player player_id="chrisma02">=&gt; Max Christie</Player>
           </Row>
           <Row>
             <Pick>2026 2nd round pick</Pick>
