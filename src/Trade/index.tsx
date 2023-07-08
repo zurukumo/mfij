@@ -62,6 +62,23 @@ const Trade = () => (
         <DetailTd>放出</DetailTd>
       </Tr>
       <Tr>
+        <DateTd>2023/06/23</DateTd>
+        <DetailTd>
+          <Row>
+            <Pick>2030 2nd round pick</Pick>
+          </Row>
+          <Row>
+            <Cash>cash</Cash>
+          </Row>
+        </DetailTd>
+        <DetailTd>
+          <Row>
+            <Pick>2023 2nd round pick</Pick>
+            <Player player_id="jacksan01">=&gt; Andre Jackson Jr.</Player>
+          </Row>
+        </DetailTd>
+      </Tr>
+      <Tr>
         <DateTd>2023/02/09</DateTd>
         <DetailTd>
           <Row>
@@ -116,6 +133,7 @@ const Trade = () => (
         <DetailTd>
           <Row>
             <Pick>2023 2nd round pick</Pick>
+            <Protected>=&gt; protected</Protected>
           </Row>
         </DetailTd>
       </Tr>
@@ -191,6 +209,7 @@ const Trade = () => (
           </Row>
           <Row>
             <Pick>2023 1st round pick</Pick>
+            <Player player_id="howarje01">=&gt; Jett Howard</Player>
           </Row>
         </DetailTd>
         <DetailTd>
