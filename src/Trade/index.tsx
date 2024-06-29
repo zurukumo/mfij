@@ -49,6 +49,10 @@ const Protected = (props: { children: ReactNode }) => (
   <div className={styles.protected}>{props.children}</div>
 );
 
+const Forfeited = (props: { children: ReactNode }) => (
+  <div className={styles.forfeited}>{props.children}</div>
+);
+
 const Manager = (props: { children: ReactNode }) => (
   <div className={styles.manager}>{props.children}</div>
 );
@@ -60,6 +64,29 @@ const Trade = () => (
         <DateTd>日付</DateTd>
         <DetailTd>獲得</DetailTd>
         <DetailTd>放出</DetailTd>
+      </Tr>
+      <Tr>
+        <DateTd>2024/06/27</DateTd>
+        <DetailTd>
+          <Row>
+            <Pick>2024 2nd round pick</Pick>
+            <Player player_id="reevean01">=&gt; Antonio Reeves</Player>
+          </Row>
+          <Row>
+            <Pick>least favorable 2030 2nd round pick</Pick>
+          </Row>
+          <Row>
+            <Pick>least favorable 2031 2nd round pick</Pick>
+          </Row>
+        </DetailTd>
+        <DetailTd>
+          <Row>
+            <Pick>most favorable 2030 2nd round pick</Pick>
+          </Row>
+          <Row>
+            <Pick>most favorable 2031 2nd round pick</Pick>
+          </Row>
+        </DetailTd>
       </Tr>
       <Tr>
         <DateTd>2023/07/17</DateTd>
@@ -74,6 +101,7 @@ const Trade = () => (
           </Row>
           <Row>
             <Pick>2024 2nd round pick</Pick>
+            <Forfeited>=&gt; forfeited</Forfeited>
           </Row>
           <Row>
             <Pick>2026 2nd round pick</Pick>
@@ -108,6 +136,7 @@ const Trade = () => (
           </Row>
           <Row>
             <Pick>2024 2nd round pick</Pick>
+            <Forfeited>=&gt; forfeited</Forfeited>
           </Row>
           <Row>
             <Cash>cash</Cash>
