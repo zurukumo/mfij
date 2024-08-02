@@ -1,20 +1,19 @@
-import Navbar from "components/Navbar";
-import { ReactNode } from "react";
-import { Helmet } from "react-helmet-async";
+import { ReactNode } from 'react'
+import { Helmet } from 'react-helmet-async'
 
-import styles from "./Template.module.scss";
+import { Navbar } from '~/components/Navbar'
 
-const Template = (props: { title: string; children: ReactNode }) => (
-  <div className={styles.wrapper}>
-    <Helmet>
-      <title>{props.title} - Magic Juice</title>
-    </Helmet>
-    <Navbar />
-    <div className={styles.content}>
-      <h1 className={styles.title}>{props.title}</h1>
-      {props.children}
+export const Template = (props: { title: string; children: ReactNode }) => (
+  <div className="flex min-h-screen w-full bg-slate-50">
+    <div className="flex w-full flex-col items-center">
+      <Helmet>
+        <title>{props.title} - Magic Fan in Japan</title>
+      </Helmet>
+      <Navbar />
+      <div className="flex w-[375px] flex-col items-center space-y-10 py-10 lg:w-[1024px]">
+        <h1 className="text-3xl">{props.title}</h1>
+        {props.children}
+      </div>
     </div>
   </div>
-);
-
-export default Template;
+)

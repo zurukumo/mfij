@@ -1,14 +1,8 @@
 import { ReactNode } from 'react'
 
-import styles from './Card.module.scss'
-
-const Card = (props: { title: string; children: ReactNode }) => (
-  <div className={styles.wrapper}>
-    <div>
-      <h2 className={styles.title}>{props.title}</h2>
-      <p className={styles.description}>{props.children}</p>
-    </div>
+export const Card = (props: { title: string; children: ReactNode }) => (
+  <div className="flex h-[200px] w-[330px] flex-col justify-start space-y-4 rounded-lg border-2 border-gray-600 bg-white p-6 hover:opacity-80">
+    <h2 className="text-2xl font-semibold">{props.title}</h2>
+    <p className="text-gray-700">{props.children}</p>
   </div>
-);
-
-export default Card;
+)
