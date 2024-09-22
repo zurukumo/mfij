@@ -16,7 +16,7 @@ export const MainPage = () => (
           3PTの上手さとFTの上手さの関係性について考察してみました。3PTが上手い選手はFTも上手いという通説は正しいのでしょうか？
         </Card>
       </a>
-      <a href="https://youtu.be/J4sjjobRnQ8?si=YTZOkwqXOgrDdG9L">
+      <a href="https://youtu.be/8oEuobkXVKc?si=9Bqx0MP_KwXCSPot">
         <Card title="Pythonで始めるNBAデータ分析">
           Pythonとpandasを使ってNBAのスタッツを分析する方法をYouTubeで紹介しました。データ分析に興味がある方はぜひご覧ください。
         </Card>
