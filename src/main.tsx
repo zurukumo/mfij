@@ -4,13 +4,15 @@ import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 import { MainPage } from '~/pages/MainPage'
+import { TradePage } from '~/pages/TradePage'
+import { TsCalculatorPage } from '~/pages/TsCalculatorPage'
 
 import './index.css'
-import { TradePage } from './pages/TradePage'
 
 const router = createBrowserRouter([
   { path: '/', element: <MainPage /> },
   { path: '/trade', element: <TradePage /> },
+  { path: '/ts-calculator', element: <TsCalculatorPage /> },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

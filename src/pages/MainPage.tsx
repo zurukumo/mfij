@@ -21,6 +21,9 @@ export const MainPage = () => (
           Pythonとpandasを使ってNBAのスタッツを分析する方法をYouTubeで紹介しました。データ分析に興味がある方はぜひご覧ください。
         </Card>
       </a>
+      <Link to="./ts-calculator">
+        <Card title="TS%計算ツール">TS%を計算できるツールです。バスケはシュート効率です。</Card>
+      </Link>
       <div className="w-[350px]"></div>
     </div>
   </Template>
