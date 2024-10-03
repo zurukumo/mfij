@@ -8,14 +8,20 @@ export const TsCalculatorPage = () => {
   const [fta, setFta] = useState<number | null>(null)
 
   const onChangePts = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setPts(Number(e.target.value))
+    setPts(convertToInt(e.target.value))
   }
   const onChangeFga = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFga(Number(e.target.value))
+    setFga(convertToInt(e.target.value))
   }
   const onChangeFta = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFta(Number(e.target.value))
+    setFta(convertToInt(e.target.value))
   }
+
+  const convertToInt = (value: string) => {
+    return value.match(/^\d+$/) ? parseInt(value, 10) : null
+  }
+
+  const tsPercent = pts && fga && fta ? ((pts / (2 * (fga + 0.44 * fta) + 1e-10)) * 100).toFixed(1) : null
 
   return (
     <Template title="TS%計算ツール">
@@ -53,9 +59,7 @@ export const TsCalculatorPage = () => {
             onChange={onChangeFta}
           />
         </div>
-        <div className="text-3xl">
-          {pts && fga && fta ? `${((pts / (2 * (fga + 0.44 * fta) + 1e-10)) * 100).toFixed(1)} TS%` : 'Waiting...'}
-        </div>
+        <div className="mt-8 text-2xl">{tsPercent ? `${tsPercent} TS%` : '入力してください'}</div>
       </div>
     </Template>
   )
