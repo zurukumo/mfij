@@ -1,7 +1,9 @@
 import { ReactNode } from 'react'
 import { Helmet } from 'react-helmet-async'
 
-import { Navbar } from '~/components/Navbar'
+import { Header } from '~/components/Header'
+
+import { Footer } from './Footer'
 
 export const Template = (props: { title: string; children: ReactNode }) => (
   <div className="flex min-h-screen w-full bg-slate-50">
@@ -9,11 +11,12 @@ export const Template = (props: { title: string; children: ReactNode }) => (
       <Helmet>
         <title>{props.title} - Magic Fan in Japan</title>
       </Helmet>
-      <Navbar />
-      <div className="flex w-[375px] flex-col items-center space-y-10 py-10 lg:w-[1024px]">
+      <Header />
+      <main className="mt-16 flex w-[375px] flex-1 flex-col items-center gap-y-8 py-8 lg:w-[1024px]">
         <h1 className="text-3xl">{props.title}</h1>
         {props.children}
-      </div>
+      </main>
+      <Footer />
     </div>
   </div>
 )
