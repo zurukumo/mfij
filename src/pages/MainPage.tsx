@@ -47,7 +47,7 @@ export const MainPage = () => (
           NBAMashの投票結果からSQLを利用してNBAの順位を予想しました。
         </Card>
       </a>
-      <div className="w-[350px]"></div>
+      <div className="w-[450px]"></div>
     </div>
   </Template>
 )
