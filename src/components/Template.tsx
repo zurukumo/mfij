@@ -13,7 +13,7 @@ export const Template = (props: { title: string; children: ReactNode }) => (
       </Helmet>
       <Header />
       <main className="mt-16 flex w-[375px] flex-1 flex-col items-center gap-y-8 py-8 lg:w-[1024px]">
-        <h1 className="text-3xl">{props.title}</h1>
+        <h1 className="text-2xl lg:text-3xl">{props.title}</h1>
         {props.children}
       </main>
       <Footer />
