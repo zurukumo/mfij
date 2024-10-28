@@ -32,7 +32,7 @@ export default function MainPage() {
     },
     {
       title: '3PT捨てられ王は誰だ!?!?',
-      href: 'https://youtu.be/85gniRD_11U',
+      href: 'https://youtu.be/OT_xVbcSXxE',
       tags: ['分析', 'Python', 'YouTube'],
       description: 'Pythonとpandasを使ってNBAで一番3PTを捨てられている選手をYouTubeで分析しました。',
       createdAt: '2024-10-14',
