@@ -5,8 +5,9 @@ import { Template } from '~/components/Template'
 
 const TITLE = 'TS%計算ツール'
 
-export const meta: MetaFunction = () => {
-  return [{ title: `${TITLE} | Magic Fan in Japan` }]
+export const meta: MetaFunction = ({ matches }) => {
+  const parentMeta = matches.flatMap((match) => match.meta ?? []).filter((meta) => !('title' in meta))
+  return [...parentMeta, { title: `${TITLE} | Magic Fan in Japan` }]
 }
 
 export default function TsCalculatorPage() {

@@ -1,7 +1,18 @@
-import type { LinksFunction } from '@remix-run/node'
-import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
+import type { LinksFunction, LoaderFunctionArgs, MetaFunction } from '@remix-run/node'
+import { Links, Meta, Outlet, Scripts, ScrollRestoration, json } from '@remix-run/react'
 
 import './tailwind.css'
+
+export async function loader({ request }: LoaderFunctionArgs) {
+  const url = new URL(request.url)
+  return json({ origin: url.origin })
+}
+
+export const meta: MetaFunction<typeof loader> = ({ data }) => [
+  { property: 'og:title', content: 'Magic Fan in Japan' },
+  { property: 'og:description', content: 'オーランド・マジックファンが運営するNBAのデータを分析するブログ' },
+  data ? { property: 'og:image', content: `${data.origin}/og.png` } : {},
+]
 
 export const links: LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },

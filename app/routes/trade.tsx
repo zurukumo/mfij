@@ -5,8 +5,9 @@ import { Template } from '~/components/Template'
 
 const TITLE = 'トレードの歴史'
 
-export const meta: MetaFunction = () => {
-  return [{ title: `${TITLE} | Magic Fan in Japan` }]
+export const meta: MetaFunction = ({ matches }) => {
+  const parentMeta = matches.flatMap((match) => match.meta ?? []).filter((meta) => !('title' in meta))
+  return [...parentMeta, { title: `${TITLE} | Magic Fan in Japan` }]
 }
 
 const Table: React.FC<PropsWithChildren> = (props) => (
