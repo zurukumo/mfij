@@ -6,7 +6,7 @@ import { Header } from '~/components/Header'
 import { Footer } from './Footer'
 
 export const Template = (props: { title: string; children: ReactNode }) => (
-  <div className="flex min-h-screen w-full bg-slate-50">
+  <div className="flex min-h-dvh w-full bg-slate-50">
     <div className="flex w-full flex-col items-center">
       <Helmet>
         <title>{props.title} - Magic Fan in Japan</title>
