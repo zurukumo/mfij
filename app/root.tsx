@@ -9,6 +9,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
 }
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => [
+  { name: 'description', content: 'オーランド・マジックファンが運営するNBAのデータを分析するブログ' },
   { property: 'og:title', content: 'Magic Fan in Japan' },
   { property: 'og:description', content: 'オーランド・マジックファンが運営するNBAのデータを分析するブログ' },
   data ? { property: 'og:image', content: `${data.origin}/og.png` } : {},
@@ -33,8 +34,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="オーランド・マジックファンが運営するNBAのデータを分析するブログ" />
-        <meta name="og:image" content="/og.png" />
         <Meta />
         <Links />
       </head>
