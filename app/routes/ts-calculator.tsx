@@ -1,8 +1,15 @@
+import { MetaFunction } from '@remix-run/node'
 import { useState } from 'react'
 
 import { Template } from '~/components/Template'
 
-export const TsCalculatorPage = () => {
+const TITLE = 'TS%計算ツール'
+
+export const meta: MetaFunction = () => {
+  return [{ title: `${TITLE} | Magic Fan in Japan` }]
+}
+
+export default function TsCalculatorPage() {
   const [pts, setPts] = useState<number | null>(null)
   const [fga, setFga] = useState<number | null>(null)
   const [fta, setFta] = useState<number | null>(null)
@@ -24,7 +31,7 @@ export const TsCalculatorPage = () => {
   const tsPercent = pts && fga && fta ? ((pts / (2 * (fga + 0.44 * fta) + 1e-10)) * 100).toFixed(1) : null
 
   return (
-    <Template title="TS%計算ツール">
+    <Template title={TITLE}>
       <div className="flex flex-col items-center gap-y-4">
         <div className="flex w-[300px] justify-around">
           <label htmlFor="pts" className="h-10 w-[40px] leading-10">

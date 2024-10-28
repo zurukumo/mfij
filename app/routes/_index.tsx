@@ -1,8 +1,15 @@
+import { MetaFunction } from '@remix-run/node'
 import { Link, useSearchParams } from 'react-router-dom'
 
 import { Template } from '~/components/Template'
 
-export const MainPage = () => {
+const TITLE = 'TOP'
+
+export const meta: MetaFunction = () => {
+  return [{ title: `${TITLE} | Magic Fan in Japan` }]
+}
+
+export default function MainPage() {
   const [searchParams] = useSearchParams()
   const tagFilter = searchParams.get('tag') || ''
 
